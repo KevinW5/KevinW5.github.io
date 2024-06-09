@@ -4,77 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Food Around the World</title>
+  <title>Foods to Try</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    .image-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .food-list {
-      flex: 1;
-    }
-
-    .food-image {
-      width: 50%;
-      height: auto;
-      margin-left: 20px;
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Food Around the World!</h1>
-  <p>Explore the culinary delights from different cultures:</p>
-  <ul>
-    <li><a href="#italian">Italian Cuisine</a></li>
-    <li><a href="#japanese">Japanese Cuisine</a></li>
-    <li><a href="#french">French Cuisine</a></li>
-  </ul>
-
-  <div class="image-container">
-    <ul class="food-list">
-      <h2 id="Italty">Italty Cuisine</h2>
-      <li>Pizza</li>
-      <li>Pasta</li>
-      <li>Risotto</li>
-    </ul>
-    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      width="500"
-      height="500">
+  <h1>Foods You Need to Try</h1>
+  <div class="slider-container">
+    <div class="slide active">
+      <img src="stir-fry-pig-blood.jpg" alt="Stir Fry Pig Blood">
+      <h2>Stir Fry Pig Blood</h2>
+      <p>Stir-fried pig blood is a traditional Chinese dish known for its unique texture and health benefits. It's often cooked with garlic, ginger, and green onions for a tasty, savory flavor. This dish shows how Chinese cuisine uses all parts of an animal.</p>
+    </div>
+    <div class="slide">
+      <img src="bunny-chow.jpg" alt="Bunny Chow">
+      <h2>Bunny Chow</h2>
+      <p>
+      Bunny chow is a popular South African street food that originated in the Indian community of Durban. It consists of a hollowed-out loaf of bread filled with spicy curry, usually made with chicken, lamb, or vegetables. This dish is enjoyed for its flavorful and hearty combination of bread and curry.</p>
+    </div>
+    <div class="slide">
+      <img src="apfelstrudel.jpg" alt="Apfelstrudel">
+      <h2>Apfelstrudel</h2>
+      <p>Apfelstrudel is a traditional Austrian pastry known for its thin, flaky dough and sweet apple filling. The filling typically includes apples, raisins, sugar, cinnamon, and breadcrumbs, creating a delicious blend of flavors and textures. Often served warm with powdered sugar or vanilla sauce, Apfelstrudel is a beloved dessert in many Central European countries.</p>
+    </div>
+    <div class="prev">&lt;</div>
+    <div class="next">&gt;</div>
   </div>
 
-  <div class="image-container">
-    <ul class="food-list">
-      <h2 id="japanese">Japanese Cuisine</h2>
-      <li>Sushi</li>
-      <li>Ramen</li>
-      <li>Takoyaki</li>
-    </ul>
-    <img src="download3.jpg" alt="Japanese Food Image" class="food-image">
-  </div>
-
-  <div class="image-container">
-    <ul class="food-list">
-      <h2 id="french">French Cuisine</h2>
-      <li>Croissant</li>
-      <li>Escargot</li>
-      <li>Ratatouille</li>
-    </ul>
-    <img src="download.jpg" alt="French Food Image" class="food-image">
-  </div>
-
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search Food...">
-    <button onclick="searchFood()">Search</button>
-  </div>
-  <div class="contact-box">
-    <h2>Contact Information</h2>
-    <p>Email: foodlover@gmail.com</p>
-    <p>Phone: 123-456-7890</p>
-    <p>Address: 123 Main Street, City, Country</p>
-  </div>
+  <footer>
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: foodlove@gmail.com</p>
+      <p>Phone: +1 (555) 555-5555</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
