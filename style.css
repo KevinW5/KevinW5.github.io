@@ -1,60 +1,110 @@
 /* style.css */
-html {
-  height: 100%;
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.slider-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  /* Make width and height equal */
+  height: 400px; 
+  /* Adjust as needed */
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Make slide height match container height */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.slide h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  /* Move arrows to the bottom */
+  bottom: 20px; /* Adjust as needed */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 50%;
+}
+
+.next {
+  right: 50%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
   width: 100%;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #4dff00;
-  color: #333;
-  margin: 0;
-  padding: 0;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  color: #1e90ff;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
+.contact h2 {
+  font-size: 24px;
   margin-bottom: 10px;
-
 }
 
-a {
-  color: #800080;
-  text-decoration: none;
+.contact p {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-a:hover {
-  text-decoration: underline;
+.prev {
+  left: 40%; /* Adjust as needed */
 }
 
-.contact-box {
-  background-color: #ffd700; /* Yellow */
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.search-box {
-  text-align: right; /* Move content to the right */
-  margin-top: 20px;
-}
-
-#searchInput {
-  width: 200px;
-  padding: 5px;
-}
-
-button {
-  padding: 5px 10px;
-  background-color: #1e90ff; /* Dodger Blue */
-  color: white;
-  border: none;
-  cursor: pointer;
+.next {
+  right: 40%; /* Adjust as needed */
 }
