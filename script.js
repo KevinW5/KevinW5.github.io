@@ -6,7 +6,7 @@ const next = document.querySelector(".next");
 
 let currentSlide = 0;
 
-function showSlide(n) {
+function showSlide(n) { 
   slides.forEach(slide => slide.classList.remove("active"));
   slides[n].classList.add("active");
 }
